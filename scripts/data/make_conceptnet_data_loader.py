@@ -54,6 +54,7 @@ special += ["<{}>".format(relation) for relation in relations]
 encoder_path = "model/encoder_bpe_40000.json"
 bpe_path = "model/vocab_40000.bpe"
 
+#be sure to "python -m spacy download en"
 text_encoder = TextEncoder(encoder_path, bpe_path)
 
 for special_token in special:
